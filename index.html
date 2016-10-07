@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="controls">
+          <p class="title">Controls</p>
+          <div class="mainControls">
+            <div class="startBtn">START</div>
+            <p class="heading">Count:</p>
+            <div id="counterKeeper"><span id="counter">00</span></div>
+
+            <p class="heading">Strict Mode:</p>
+
+            <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="strictSwitch">
+                <label class="onoffswitch-label" for="strictSwitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="simon">
+          <div id="simonText">SIMON</div>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 271.1 271.1" xml:space="preserve" enable-background="new 0 0 271.1 271.1">
+          <g id="Layer_1">
+            <path class="ll"d="M83.3 135.5H2.5c0 73.5 59.6 133 133 133v-80.8C106.7 187.8 83.3 164.4 83.3 135.5z"/>
+            <path class="tl" d="M135.5 83.3V2.5c-73.5 0-133 59.6-133 133h80.8C83.3 106.7 106.7 83.3 135.5 83.3z"/>
+            <path class="tr"  d="M135.5 2.5v80.8c28.9 0 52.2 23.4 52.2 52.2h80.8C268.6 62.1 209 2.5 135.5 2.5z"/>
+            <path class="lr" d="M135.5 187.8v80.8c73.5 0 133-59.6 133-133h-80.8C187.8 164.4 164.4 187.8 135.5 187.8z"/>
+            <circle cx="135.5" cy="135.5" r="52.2"/>
+          </svg>
+        </div>
+
+        <audio id="greenSound" src="sounds/simonSound1.mp3" type="audio/mpeg"></audio>
+        <audio id="redSound" src="sounds/simonSound2.mp3" type="audio/mpeg"></audio>
+        <audio id="yellowSound" src="sounds/simonSound3.mp3" type="audio/mpeg"></audio>
+        <audio id="blueSound" src="sounds/simonSound4.mp3" type="audio/mpeg"></audio>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
